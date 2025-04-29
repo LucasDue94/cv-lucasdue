@@ -5,7 +5,7 @@ import { Title, Meta } from '@angular/platform-browser';
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
   constructor(private title: Title, private meta: Meta) {
