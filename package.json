@@ -7,9 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ghpages": "ng build --configuration production --base-href=/cv-lucasdue/",
+    "build:ghpages": "ng build --configuration production --base-href=/",
     "deploy:ghpages": "npx angular-cli-ghpages --dir=dist/cv-lucasdue/browser",
-    "deploy": "sh -c \"echo lucasdue.com.br > dist/cv-lucasdue/browser/CNAME && npx angular-cli-ghpages --dir=dist/cv-lucasdue/browser\""
+    "deploy": "ng build --configuration production --base-href=/ && echo 'lucasdue.com.br' > dist/cv-lucasdue/browser/CNAME && npx angular-cli-ghpages --dir=dist/cv-lucasdue/browser"
   },
   "private": true,
   "dependencies": {
