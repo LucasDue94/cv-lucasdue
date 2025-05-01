@@ -1,0 +1,50 @@
+@use '../../../../assets/styles/colors' as *;
+
+.container {
+  background: $cor-terracota;
+  font-size: 12px;
+
+  #nome {
+    font-size: 5em;
+    color: $cor-texto-principal;
+  }
+
+  #cargo {
+    font-size: 2em;
+    color: $cor-texto-claro;
+    font-weight: normal;
+  }
+
+  .img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+  }
+
+  .p-link {
+    color: $cor-verde-floresta;
+  }
+}
+
+#linkedin, #email, #wpp {
+  position: absolute;
+}
+
+#linkedin {
+  left: 130px;
+  top: 10px;
+}
+
+#email {
+  left: 140px;
+  top: 40px;
+}
+
+#wpp {
+  left: 140px;
+  top: 70px;
+}

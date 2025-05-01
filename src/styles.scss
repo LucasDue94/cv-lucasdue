@@ -1,1 +1,14 @@
+@use 'assets/styles/colors' as *;
+@import "primeicons/primeicons.css";
+
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Reset global para margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Faz com que o padding e border sejam incluídos no tamanho total do elemento */
+}
