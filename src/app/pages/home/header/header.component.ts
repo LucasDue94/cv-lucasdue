@@ -24,14 +24,15 @@ export class HeaderComponent {
     label: 'Experiência',
     url: `experiencia`,
   }, {
-    label: 'Projetos pessoais',
-    url: `projetos`,
-  }, {
     label: 'Tecnologias',
     url: `tecnologias`,
-  },{
-    label: 'Hobbies',
-    url: `hobbies`,
   },
+    {
+      label: 'Projetos',
+      url: `projetos`,
+    }, {
+      label: 'Hobbies',
+      url: `hobbies`,
+    },
   ]
 }

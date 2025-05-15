@@ -1,18 +1,19 @@
 @use '../../../../assets/styles/colors' as *;
 
-:host {
+:host{
   display: flex;
   width: 100%;
   background: $cor-terracota;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 12px;
+
 
   .container-menu {
     display: flex;
@@ -22,6 +23,7 @@
   }
 
   .container-info {
+    min-width: 300px;
     display: flex;
     flex-direction: column;
 
@@ -142,6 +144,7 @@
   .container-menu {
   }
   .container-info {
+    min-width: auto !important;
 
     #nome {
       font-size: 3em !important;
