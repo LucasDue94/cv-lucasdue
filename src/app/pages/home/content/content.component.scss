@@ -1,5 +1,26 @@
 @use '../../../../assets/styles/colors' as *;
 
-.container{
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  flex: 1;
   background-color: $cor-fundo-principal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  //font-family: 'Nunito', sans-serif;
+}
+
+.container-experiencia{
+  display: flex;
+  flex-direction: column;
+}
+
+:host::ng-deep.p-timeline-event-opposite{
+  display: none;
 }

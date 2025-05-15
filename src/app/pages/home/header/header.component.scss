@@ -1,19 +1,72 @@
 @use '../../../../assets/styles/colors' as *;
 
-.container {
+:host {
+  display: flex;
+  width: 100%;
   background: $cor-terracota;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   font-size: 12px;
 
-  #nome {
-    font-size: 5em;
-    color: $cor-texto-principal;
+  .container-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 
-  #cargo {
-    font-size: 2em;
-    color: $cor-texto-claro;
-    font-weight: normal;
+  .container-info {
+    display: flex;
+    flex-direction: column;
+
+    #nome {
+      font-size: 5em;
+      color: $cor-texto-principal;
+      //font-family: 'Poppins', sans-serif;
+    }
+
+    #cargo {
+      font-size: 2em;
+      color: $cor-texto-claro;
+      font-weight: normal;
+    }
+
   }
+
+
+  .container-links {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    .link {
+      cursor: pointer;
+      margin-left: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      color: $cor-texto-principal;
+
+      &:hover {
+        color: $cor-texto-claro;
+        transition: 300ms;
+      }
+    }
+  }
+
+
+}
+
+
+.container-perfil {
+  position: relative;
+  display: flex;
 
   .img {
     width: 130px;
@@ -28,23 +81,81 @@
   .p-link {
     color: $cor-verde-floresta;
   }
+
+  .container-icone-links {
+    position: relative;
+    min-width: 40px;
+
+    #linkedin, #email, #wpp {
+      position: absolute;
+    }
+
+    #email {
+      top: 40px;
+    }
+
+    #linkedin {
+      right: 10px;
+      top: 10px;
+    }
+
+    #wpp {
+      right: 10px;
+      top: 70px;
+    }
+  }
 }
 
-#linkedin, #email, #wpp {
-  position: absolute;
+:host::ng-deep.menu-button {
+  background-color: inherit;
+  border-color: $cor-terracota;
+
+  &:active {
+    background-color: $cor-verde-floresta !important;
+  }
+
+  &:hover {
+    background-color: $cor-verde-floresta !important;
+  }
+
+  .p-button-icon {
+    font-size: 30px;
+  }
 }
 
-#linkedin {
-  left: 130px;
-  top: 10px;
+:host::ng-deep.p-menu-overlay {
+  .p-menu-item-content {
+    color: white;
+    font-size: 18px;
+  }
+
+  background-color: $cor-terracota;
+  border-color: $cor-verde-floresta;
 }
 
-#email {
-  left: 140px;
-  top: 40px;
-}
 
-#wpp {
-  left: 140px;
-  top: 70px;
+@media (max-width: 600px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .container-menu {
+  }
+  .container-info {
+
+    #nome {
+      font-size: 3em !important;
+    }
+
+    #cargo {
+      font-size: 1.5em !important;
+    }
+  }
+  .container-perfil {
+    .img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
 }

@@ -1,4 +1,5 @@
 @use '../../../assets/styles/colors' as *;
 
 :host {
+  overflow-y: hidden;
 }

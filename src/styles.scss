@@ -3,7 +3,13 @@
 
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  overflow-y: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  //font-family: 'Fredoka', sans-serif;
 }
 
 /* Reset global para margens e padding */
@@ -11,4 +17,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Faz com que o padding e border sejam incluídos no tamanho total do elemento */
+}
+
+.titulo {
+  color: $cor-texto-principal;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
 }
