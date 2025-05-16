@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-tecnologias',
   imports: [],
   templateUrl: './tecnologias.component.html',
-  styleUrl: './tecnologias.component.scss'
+  styleUrl: './tecnologias.component.scss',
 })
-export class TecnologiasComponent {
-
-}
+export class TecnologiasComponent {}

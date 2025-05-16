@@ -6,9 +6,9 @@
     </ng-template>
     <ng-template #content let-event>
       <p-card styleClass="custom-card mb-3" [header]="event.empresa" [subheader]="event.periodo">
-        <img [src]="event.logo" [alt]="event.nome" width="80" class="shadow"/>
+        <img [src]="event.logo" [alt]="event.nome" width="80" class="shadow" />
         <p>
-         {{event.resumo}}
+          {{ event.resumo }}
         </p>
       </p-card>
     </ng-template>

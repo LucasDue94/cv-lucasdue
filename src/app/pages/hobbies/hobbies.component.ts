@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-hobbies',
   imports: [],
   templateUrl: './hobbies.component.html',
-  styleUrl: './hobbies.component.scss'
+  styleUrl: './hobbies.component.scss',
 })
-export class HobbiesComponent {
-
-}
+export class HobbiesComponent {}

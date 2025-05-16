@@ -1,26 +1,21 @@
-import {Component} from '@angular/core';
-import {Timeline} from 'primeng/timeline';
-import {Card} from 'primeng/card';
-import {CommonModule} from '@angular/common';
-import {PrimeTemplate} from 'primeng/api';
+import { Component } from '@angular/core';
+import { Timeline } from 'primeng/timeline';
+import { Card } from 'primeng/card';
+import { CommonModule } from '@angular/common';
+import { PrimeTemplate } from 'primeng/api';
 
 @Component({
   selector: 'app-experiencia',
-  imports: [
-    Timeline,
-    Card,
-    Timeline,
-    CommonModule,
-    PrimeTemplate,
-  ],
+  imports: [Timeline, Card, Timeline, CommonModule, PrimeTemplate],
   templateUrl: './experiencia.component.html',
-  styleUrl: './experiencia.component.scss'
+  styleUrl: './experiencia.component.scss',
 })
 export class ExperienciaComponent {
   items = [
     {
       cor: '#FF6B6B',
-      resumo: ' Atualmente trabalho aqui em um modelo de cooperativa. Estou alocado no time de\n' +
+      resumo:
+        ' Atualmente trabalho aqui em um modelo de cooperativa. Estou alocado no time de\n' +
         '          desenvolvimento de seguros prestamista do Banco do Brasil. Na squad de front-end, eu\n' +
         '          crio novos micro frontends, realizo manutenções, evoluções e também migrações da\n' +
         '          primeira versão do Angular para versões mais recentes. Utilizamos repositórios de código\n' +
@@ -43,7 +38,7 @@ export class ExperienciaComponent {
       cargo: 'Desenvolvedor de Software',
       logo: 'assets/logos/egtec.jpeg',
       empresa: 'EGTEC',
-      estado: 'Saquarema, RJ'
+      estado: 'Saquarema, RJ',
     },
     {
       cor: '#4D96FF',
@@ -51,7 +46,7 @@ export class ExperienciaComponent {
       periodo: '03-05-2025',
       cargo: 'Analista de Sistemas SR',
       logo: 'assets/logos/brq.jpeg',
-      empresa: 'BRQ'
+      empresa: 'BRQ',
     },
     {
       cor: '#FFD93D',
@@ -59,7 +54,7 @@ export class ExperienciaComponent {
       periodo: '18-03-2025',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/digievo.jpeg',
-      empresa: 'Digievo'
+      empresa: 'Digievo',
     },
     {
       cor: '#9D4EDD',
@@ -67,7 +62,7 @@ export class ExperienciaComponent {
       periodo: '02-05-2025',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/mastertax.jpeg',
-      empresa: 'Maxtertax'
+      empresa: 'Maxtertax',
     },
     {
       cor: '#FF9F1C',
@@ -75,7 +70,7 @@ export class ExperienciaComponent {
       periodo: '10-04-2025',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/pfx.png',
-      empresa: 'Portal Flex LTDA'
+      empresa: 'Portal Flex LTDA',
     },
     {
       cor: '#2EC4B6',
@@ -83,14 +78,15 @@ export class ExperienciaComponent {
       periodo: '04-05-2025',
       cargo: 'Desenvolvedor Fullstack',
       logo: 'assets/logos/hc.jpeg',
-      empresa: 'Hospital do Cidade'
-    }, {
+      empresa: 'Hospital do Cidade',
+    },
+    {
       cor: '#2EC4B6',
       resumo: 'pi pi-envelope',
       periodo: '04-05-2025',
       cargo: 'Estagiário',
       logo: 'assets/logos/hc.jpeg',
-      empresa: 'Hospital do Cidade'
-    }
+      empresa: 'Hospital do Cidade',
+    },
   ];
 }

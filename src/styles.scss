@@ -1,5 +1,5 @@
 @use 'assets/styles/colors' as *;
-@import "primeicons/primeicons.css";
+@import 'primeicons/primeicons.css';
 
 /* You can add global styles to this file, and also import other style files */
 body {
@@ -9,8 +9,12 @@ body {
   height: 100vh;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   //font-family: 'Fredoka', sans-serif;
 }
 
@@ -39,5 +43,4 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 18px;
   }
-
 }
