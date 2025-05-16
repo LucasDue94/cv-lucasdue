@@ -1,0 +1,22 @@
+/*
+
+.container-experiencia {
+  display: flex;
+  flex-direction: column;
+}
+*/
+::ng-deep .custom-timeline .p-timeline-event-content {
+  text-align: left; // ou right, se quiser inverter
+}
+
+::ng-deep .custom-marker {
+  background: #1E3C34;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+
+.custom-card {
+  max-width: 500px;
+}

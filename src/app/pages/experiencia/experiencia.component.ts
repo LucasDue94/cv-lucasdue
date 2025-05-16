@@ -1,19 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Timeline} from 'primeng/timeline';
 import {Card} from 'primeng/card';
-import {Button} from 'primeng/button';
 import {CommonModule} from '@angular/common';
-import {ScrollPanel} from 'primeng/scrollpanel';
+import {PrimeTemplate} from 'primeng/api';
 
 @Component({
   selector: 'app-experiencia',
   imports: [
     Timeline,
     Card,
-    Button,
     Timeline,
     CommonModule,
-    ScrollPanel,
+    PrimeTemplate,
   ],
   templateUrl: './experiencia.component.html',
   styleUrl: './experiencia.component.scss'
@@ -21,68 +19,78 @@ import {ScrollPanel} from 'primeng/scrollpanel';
 export class ExperienciaComponent {
   items = [
     {
-      color: '#FF6B6B',
-      icon: 'pi pi-user',
-      date: '01-05-2025',
-      name: 'Maria Fernandes',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg',
-      company: 'Microsoft'
+      cor: '#FF6B6B',
+      resumo: ' Atualmente trabalho aqui em um modelo de cooperativa. Estou alocado no time de\n' +
+        '          desenvolvimento de seguros prestamista do Banco do Brasil. Na squad de front-end, eu\n' +
+        '          crio novos micro frontends, realizo manutenções, evoluções e também migrações da\n' +
+        '          primeira versão do Angular para versões mais recentes. Utilizamos repositórios de código\n' +
+        '          interno do BB e adotamos o gitflow.\n' +
+        '          É necessário passar por um longo processo de dev, testes e esteira de integração contínua e\n' +
+        '          várias etapas até gerar uma release em produção.\n' +
+        '          Além disso, analiso impactos de mudanças significativas, trabalho na melhoria de\n' +
+        '          performance e garanto uma cobertura de 80% de testes unitários exigidos pelo Banco do\n' +
+        '          Brasil.',
+      periodo: '01-05-2025',
+      cargo: 'Analista e Desenvolvedor III',
+      logo: 'assets/logos/coopersystem.jpeg',
+      empresa: 'CooperSystem',
+      estado: 'Brasília, DF',
     },
     {
-      color: '#6BCB77',
-      icon: 'pi pi-briefcase',
-      date: '22-04-2025',
-      name: 'Carlos Ribeiro',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg',
-      company: 'Apple'
+      cor: '#6BCB77',
+      resumo: 'pi pi-briefcase',
+      periodo: '22-04-2025',
+      cargo: 'Desenvolvedor de Software',
+      logo: 'assets/logos/egtec.jpeg',
+      empresa: 'EGTEC',
+      estado: 'Saquarema, RJ'
     },
     {
-      color: '#4D96FF',
-      icon: 'pi pi-calendar',
-      date: '03-05-2025',
-      name: 'Juliana Castro',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',
-      company: 'Google'
+      cor: '#4D96FF',
+      resumo: 'pi pi-calendar',
+      periodo: '03-05-2025',
+      cargo: 'Analista de Sistemas SR',
+      logo: 'assets/logos/brq.jpeg',
+      empresa: 'BRQ'
     },
     {
-      color: '#FFD93D',
-      icon: 'pi pi-camera',
-      date: '18-03-2025',
-      name: 'Roberto Lima',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
-      company: 'Amazon'
+      cor: '#FFD93D',
+      resumo: 'pi pi-camera',
+      periodo: '18-03-2025',
+      cargo: 'Desenvolvedor Front-End',
+      logo: 'assets/logos/digievo.jpeg',
+      empresa: 'Digievo'
     },
     {
-      color: '#9D4EDD',
-      icon: 'pi pi-shopping-cart',
-      date: '02-05-2025',
-      name: 'Fernanda Souza',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png',
-      company: 'Meta'
+      cor: '#9D4EDD',
+      resumo: 'pi pi-shopping-cart',
+      periodo: '02-05-2025',
+      cargo: 'Desenvolvedor Front-End',
+      logo: 'assets/logos/mastertax.jpeg',
+      empresa: 'Maxtertax'
     },
     {
-      color: '#FF9F1C',
-      icon: 'pi pi-clock',
-      date: '10-04-2025',
-      name: 'Eduardo Mello',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg',
-      company: 'Tesla'
+      cor: '#FF9F1C',
+      resumo: 'pi pi-clock',
+      periodo: '10-04-2025',
+      cargo: 'Desenvolvedor Front-End',
+      logo: 'assets/logos/pfx.png',
+      empresa: 'Portal Flex LTDA'
     },
     {
-      color: '#2EC4B6',
-      icon: 'pi pi-envelope',
-      date: '04-05-2025',
-      name: 'Camila Duarte',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg',
-      company: 'NVIDIA'
-    },
-    {
-      color: '#D81159',
-      icon: 'pi pi-heart',
-      date: '29-04-2025',
-      name: 'André Oliveira',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg',
-      company: 'IBM'
+      cor: '#2EC4B6',
+      resumo: 'pi pi-envelope',
+      periodo: '04-05-2025',
+      cargo: 'Desenvolvedor Fullstack',
+      logo: 'assets/logos/hc.jpeg',
+      empresa: 'Hospital do Cidade'
+    }, {
+      cor: '#2EC4B6',
+      resumo: 'pi pi-envelope',
+      periodo: '04-05-2025',
+      cargo: 'Estagiário',
+      logo: 'assets/logos/hc.jpeg',
+      empresa: 'Hospital do Cidade'
     }
   ];
 }

@@ -3,13 +3,13 @@ import {HomeComponent} from './pages/home/home.component';
 import {ExperienciaComponent} from './pages/experiencia/experiencia.component';
 import {HobbiesComponent} from './pages/hobbies/hobbies.component';
 import {ProjetosComponent} from './pages/projetos/projetos.component';
-import {ResumoComponent} from './pages/resumo/resumo.component';
+import {SobreComponent} from './pages/sobre/sobre.component';
 import {TecnologiasComponent} from './pages/tecnologias/tecnologias.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: ResumoComponent,
+    component: SobreComponent,
     title: 'Início',
   }, {
     path: 'experiencia',
@@ -25,7 +25,7 @@ export const routes: Routes = [
     title: 'Projetos',
   }, {
     path: 'sobre',
-    component: ResumoComponent,
+    component: SobreComponent,
     title: 'Sobre',
   }, {
     path: 'tecnologias',
@@ -34,6 +34,6 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    component: ResumoComponent,
+    component: SobreComponent,
   }
 ];
