@@ -6,16 +6,17 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100%;
-  flex: 1;
+  height: 100%;
   background-color: $cor-fundo-principal;
+  overflow-y: auto;
 }
 
 .container {
+  flex: 1;
+  height: 100%;
   padding: 2em 2.5em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   //font-family: 'Nunito', sans-serif;
 }

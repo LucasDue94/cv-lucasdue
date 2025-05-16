@@ -1,3 +1,46 @@
-:host{
-  max-width: 500px;
+.container {
+  position: relative;
+  background: url('/assets/images/resumo.png') center/cover no-repeat;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  overflow: hidden;
+  color: #F1ECDD;
+  animation: fadeSlideUp 1s ease forwards;
+  opacity: 0;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 60, 52, 0.8);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.content p {
+  text-indent: 2em;
+  margin-bottom: 1em;
+}
+
+.titulo{
+ color: #F1ECDD;
+}
+
+
+@keyframes fadeSlideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

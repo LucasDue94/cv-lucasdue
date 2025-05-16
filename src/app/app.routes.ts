@@ -9,7 +9,7 @@ import {TecnologiasComponent} from './pages/tecnologias/tecnologias.component';
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: ResumoComponent,
     title: 'Início',
   }, {
     path: 'experiencia',
@@ -24,12 +24,16 @@ export const routes: Routes = [
     component: ProjetosComponent,
     title: 'Projetos',
   }, {
-    path: 'resumo',
+    path: 'sobre',
     component: ResumoComponent,
-    title: 'Resumo',
+    title: 'Sobre',
   }, {
     path: 'tecnologias',
     component: TecnologiasComponent,
     title: 'Tecnologias',
   },
+  {
+    path: '**',
+    component: ResumoComponent,
+  }
 ];

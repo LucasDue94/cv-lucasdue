@@ -1,5 +1,8 @@
 @use '../../../assets/styles/colors' as *;
 
 :host {
+  display: flex;
   overflow-y: hidden;
+  height: 100%;
+  flex-direction: column;
 }

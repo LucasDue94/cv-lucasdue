@@ -18,8 +18,8 @@ export class HeaderComponent {
   readonly wppLink = `https://wa.me/5582999825788?text=Olá%20Lucas,%20gostei%20do%20seu%20perfil%20e%20gostaria%20de%20entrar%20em%20contato%20para%20discutir%20uma%20oportunidade.%20Você%20tem%20interesse%20em%20conversar%20sobre%20uma%20posição?`;
   readonly linkedinLink = `https://www.linkedin.com/in/lucasdue/`
   items: MenuItem[] = [{
-    label: 'Resumo',
-    url: `/resumo`,
+    label: 'Sobre',
+    url: `sobre`,
   }, {
     label: 'Experiência',
     url: `experiencia`,
