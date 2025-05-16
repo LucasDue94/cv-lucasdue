@@ -3,14 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve && npm run format",
+    "start": "ng serve && npm run format && npm run clean:imports",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier --write .",
     "build:ghpages": "ng build --configuration production --base-href=/",
+    "clean:imports": "eslint \"src/**/*.{ts,tsx}\" --rule \"@typescript-eslint/no-unused-vars:error\" --fix",
     "deploy:ghpages": "npx angular-cli-ghpages --dir=dist/cv-lucasdue",
-    "deploy": "npm run build:ghpages && echo 'lucasdue.com.br' > dist/cv-lucasdue/CNAME && npm run deploy:ghpages"
+    "deploy": "npm run build:ghpages && echo 'lucasdue.com.br' > dist/cv-lucasdue/CNAME && npm run deploy:ghpages",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
@@ -32,9 +34,18 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.4",
+    "@angular-eslint/builder": "19.4.0",
+    "@angular-eslint/eslint-plugin": "19.4.0",
+    "@angular-eslint/eslint-plugin-template": "19.4.0",
+    "@angular-eslint/schematics": "19.4.0",
+    "@angular-eslint/template-parser": "19.4.0",
     "@angular/cli": "^19.1.4",
     "@angular/compiler-cli": "^19.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "7.11.0",
+    "@typescript-eslint/parser": "7.11.0",
+    "eslint": "8.57.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

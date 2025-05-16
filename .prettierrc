@@ -1,5 +1,8 @@
 {
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 100
+  "printWidth": 100,
+  "importOrder": ["^@angular", "^[a-z]", "^@", "^[.]{1,2}/"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
