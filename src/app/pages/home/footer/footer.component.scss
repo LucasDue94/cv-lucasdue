@@ -3,4 +3,10 @@
 .container{
   background-color: $cor-verde-floresta;
   height: 5em;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $cor-texto-claro;
 }
