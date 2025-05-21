@@ -5,11 +5,11 @@
   flex-direction: column;
 }
 */
-::ng-deep .custom-timeline .p-timeline-event-content {
+/*::ng-deep .custom-timeline .p-timeline-event-content {
   text-align: left; // ou right, se quiser inverter
-}
+}*/
 
-::ng-deep .custom-marker {
+:host::ng-deep .custom-marker {
   background: #1e3c34;
   border-radius: 50%;
   width: 1rem;
@@ -17,6 +17,39 @@
   display: inline-block;
 }
 
-.custom-card {
-  max-width: 500px;
+:host::ng-deep.p-timeline-event-opposite {
+  max-height: 70px;
+
 }
+
+:host::ng-deep.p-timeline-event-content {
+  max-width: 600px;
+  flex: initial;
+  //height: 500px;
+  //overflow-y: auto;
+
+  .p-card {
+    //height: 100%;
+
+    //max-height: 250px;
+
+    //max-width: 300px;
+  }
+}
+
+
+.custom-card {
+  //max-width: 500px;
+}
+
+.cargo-logo, .periodo {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.periodo {
+  flex-direction: column;
+  align-items: flex-start;
+}
+

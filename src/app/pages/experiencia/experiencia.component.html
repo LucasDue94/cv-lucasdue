@@ -1,15 +1,29 @@
 <div class="container-experiencia">
-  <h2 class="titulo text-center mb-4">Experiência</h2>
-  <p-timeline [value]="items" align="alternate" styleClass="custom-timeline">
-    <ng-template pTemplate="marker" let-event>
-      <span class="custom-marker"></span>
+  <h2 class="titulo text-center mb-5">Experiência</h2>
+  <p-timeline [value]="items" align="right" styleClass="custom-timeline">
+    <ng-template let-event pTemplate="opposite">
+      <div class="periodo hidden md:flex">
+        <span>{{ event.dataInicio | periodo: event.dataFim }}</span>
+        <span>{{ event.dataInicio | duracao: event.dataFim }}</span>
+      </div>
+    </ng-template>
+    <ng-template let-event pTemplate="marker">
+      <span class="custom-marker hidden md:block"></span>
     </ng-template>
     <ng-template #content let-event>
-      <p-card styleClass="custom-card mb-3" [header]="event.empresa" [subheader]="event.periodo">
-        <img [src]="event.logo" [alt]="event.nome" width="80" class="shadow" />
+      <p-card [header]="event.cargo" styleClass="custom-card mb-5">
+        <div class="cargo-logo">
+          <img [alt]="event.empresa" [src]="event.logo" class="shadow mr-2" width="80"/>
+          <span>{{ event.empresa }}</span>
+        </div>
+        <div class="periodo md:hidden">
+          <span>{{ event.dataInicio | periodo: event.dataFim }}</span>
+          <span>{{ event.dataInicio | duracao: event.dataFim }}</span>
+        </div>
         <p>
           {{ event.resumo }}
         </p>
+
       </p-card>
     </ng-template>
   </p-timeline>
