@@ -1,7 +1,7 @@
 .container {
   position: relative;
   background: url('/assets/images/resumo.png') center/cover no-repeat;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   padding: 3rem 2rem;
   overflow: hidden;
   color: #f1ecdd;
@@ -34,13 +34,3 @@
   color: #f1ecdd;
 }
 
-@keyframes fadeSlideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}

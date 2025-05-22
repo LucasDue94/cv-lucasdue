@@ -26,7 +26,7 @@ h6 {
 }
 
 .titulo {
-  color: $cor-texto-principal;
+  color: $cor-verde-floresta;
 }
 
 .wrapper {
@@ -42,5 +42,16 @@ h6 {
   .p-menu-item-content {
     color: white;
     font-size: 18px;
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

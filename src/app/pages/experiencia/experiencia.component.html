@@ -1,26 +1,36 @@
-<div class="container-experiencia">
-  <h2 class="titulo text-center mb-5">Experiência</h2>
+<div class="container">
+  <section class="experiencia-bg mb-4"></section>
+  <section class="container-experiencia mb-4">
+    <h2 class="titulo text-center mb-2">Experiência</h2>
+    <div class="mb-5">Em todas as minhas experiências, sempre estive envolvido com metodologias ágeis,
+      Gitflow,
+      integração
+      e entrega contínua. Gosto de trabalhar em equipe, contribuir com boas práticas e me desafiar tecnicamente,
+      buscando evoluir a
+      cada projeto. Aprender algo novo é sempre bem vindo.
+    </div>
+  </section>
   <p-timeline [value]="items" align="right" styleClass="custom-timeline">
     <ng-template let-event pTemplate="opposite">
-      <div class="periodo hidden md:flex">
-        <span>{{ event.dataInicio | periodo: event.dataFim }}</span>
-        <span>{{ event.dataInicio | duracao: event.dataFim }}</span>
+      <div class="container-periodo hidden md:flex">
+        <span class="periodo">{{ event.dataInicio | periodo: event.dataFim }}</span>
+        <span class="duracao">{{ event.dataInicio | duracao: event.dataFim }}</span>
       </div>
     </ng-template>
     <ng-template let-event pTemplate="marker">
       <span class="custom-marker hidden md:block"></span>
     </ng-template>
     <ng-template #content let-event>
-      <p-card [header]="event.cargo" styleClass="custom-card mb-5">
-        <div class="cargo-logo">
-          <img [alt]="event.empresa" [src]="event.logo" class="shadow mr-2" width="80"/>
-          <span>{{ event.empresa }}</span>
-        </div>
+      <p-card [header]="event.cargo" styleClass="mb-5">
         <div class="periodo md:hidden">
-          <span>{{ event.dataInicio | periodo: event.dataFim }}</span>
+          <span class="mr-2">{{ event.dataInicio | periodo: event.dataFim }}</span>
           <span>{{ event.dataInicio | duracao: event.dataFim }}</span>
         </div>
-        <p>
+        <div class="empresa-logo mt-2 mb-2 md:mb-3">
+          <img [alt]="event.empresa" [src]="event.logo" class="logo mr-2"/>
+          <span>{{ event.empresa }} | {{ event.estado }}</span>
+        </div>
+        <p class="resumo">
           {{ event.resumo }}
         </p>
 

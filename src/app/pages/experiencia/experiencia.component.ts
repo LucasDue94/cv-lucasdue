@@ -5,11 +5,10 @@ import {CommonModule} from '@angular/common';
 import {PrimeTemplate} from 'primeng/api';
 import {PeriodoPipe} from '../../pipes/periodo.pipe';
 import {DuracaoPipe} from '../../pipes/duracao.pipe';
-import {EllipsisPipe} from '../../pipes/ellipsis.pipe';
 
 @Component({
   selector: 'app-experiencia',
-  imports: [Timeline, Card, Timeline, CommonModule, PrimeTemplate, PeriodoPipe, DuracaoPipe, EllipsisPipe],
+  imports: [Timeline, Card, Timeline, CommonModule, PrimeTemplate, PeriodoPipe, DuracaoPipe],
   templateUrl: './experiencia.component.html',
   styleUrl: './experiencia.component.scss',
 })
@@ -17,99 +16,75 @@ export class ExperienciaComponent {
   items = [
     {
       cor: '#FF6B6B',
-      resumo: `Atualmente trabalho aqui em um modelo de cooperativa. Estou alocado no time de
-desenvolvimento de seguros prestamista do Banco do Brasil. Na squad de front-end, eu
-crio novos micro frontends, realizo manutenções, evoluções e também migrações da
-primeira versão do Angular para versões mais recentes. Utilizamos repositórios de código
-interno do BB e adotamos o gitflow.
-É necessário passar por um longo processo de dev, testes e esteira de integração contínua e
-várias etapas até gerar uma release em produção.
-Além disso, analiso impactos de mudanças significativas, trabalho na melhoria de
-performance e garanto uma cobertura de no mínimo 80% dos testes unitários.`,
+      resumo: `Aqui atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular e participo ativamente das migrações para versões mais atuais. Me envolvo nas decisões técnicas, no apoio a PMs e POs, além da navegação e usabilidade. É um ambiente que exige atenção aos detalhes, na performance e qualidade. Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.`,
       dataInicio: '03-10-2022',
       dataFim: '',
       cargo: 'Analista e Desenvolvedor III',
-      logo: 'assets/logos/coopersystem.jpeg',
+      logo: 'assets/logos/coopersystem.png',
       empresa: 'CooperSystem',
       estado: 'Brasília, DF',
     },
     {
       cor: '#6BCB77',
-      resumo: `Como prestador de serviços, com flexibilidade nas entregas e confiança ao longo dos anos,
-trabalhei sozinho na criação do front-end de um sistema de gestão de NFEs voltado para
-redes de farmácia.
-Esse software continua evoluindo utilizando Angular e tem uma base interessante de
-clientes que o utiliza. Aqui usamos o framework css primeng e outro framework chamado
-devexpress, que possui uma poderosa e grande variedade de componentes de tabelas,
-gráficos e elementos visuais.
-Participo de diversos refinamentos técnicos para alinhamento do design e backend da
-aplicação.`,
+      resumo: `Tenho muito orgulho desse projeto! Desenvolvo sozinho o front-end de um sistema de gestão de NFEs usado por redes de farmácia. O sistema segue evoluindo e ajudando várias empresas, o que me motiva bastante. É um espaço onde consigo aplicar minhas ideias com bastante liberdade e responsabilidade.`,
       dataInicio: '03-10-2021',
       dataFim: '',
-      cargo: 'Desenvolvedor de Software',
-      logo: 'assets/logos/egtec.jpeg',
+      cargo: 'Desenvolvedor Front-End SR',
+      logo: 'assets/logos/egtec.png',
       empresa: 'EGTEC',
       estado: 'Saquarema, RJ',
     },
     {
       cor: '#4D96FF',
-      resumo: `Na BRQ fui alocado no time de desenvolvimento de front-end do novo Sistema de Gestão
-de campanhas da Boticário (GCAM) utilizando React.js.
-Colaborei também na manutenção do sistema legado feito em Angular js. Aqui também
-realizávamos as cerimônias do SCRUM, com dailys diárias, plannings e reviews..`,
+      resumo: `Foi uma experiência muito bacana trabalhando no time que modernizou o sistema de gestão de campanhas do Grupo Boticário. Além de desenvolver com React.js, também ajudei na manutenção do sistema legado em AngularJS, garantindo que a transição fosse tranquila e segura.`,
       dataInicio: '06-10-2021',
       dataFim: '02-22-2022',
       cargo: 'Analista de Sistemas SR',
       logo: 'assets/logos/brq.jpeg',
       empresa: 'BRQ',
+      estado: 'Curitiba, PR',
+
     },
     {
       cor: '#FFD93D',
-      resumo: `Na Digi, participei de umas correções em um sistema de delivery tipo IFOOD e evolução de
-um e-commerce. Utilizamos Angular, Bootstrap e Material como ferramentas.`,
+      resumo: `Participei de melhorias em um sistema de delivery, além de evoluir um e-commerce. Foi uma passagem rápida, mas onde pude contribuir com soluções práticas, trabalhando com Angular e Bootstrap.`,
       dataInicio: '02-25-2021',
       dataFim: '05-22-2021',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/digievo.jpeg',
       empresa: 'Digievo',
+      estado: 'São Paulo, Sp',
     },
     {
       cor: '#9D4EDD',
-      resumo: `Aqui na ATM fui responsável por evoluir um sistema voltado para a área contábil. As
-ferramentas foram Angular, NG Zorro e Bootstrap 4.`,
+      resumo: `Aqui ajudei a evoluir um sistema voltado para a área contábil. Tive a oportunidade de propor melhorias e entregar novas funcionalidades, sempre com foco na qualidade e na experiência do usuário.`,
       dataInicio: '10-15-2020',
       dataFim: '02-22-2021',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/mastertax.jpeg',
       empresa: 'Maxtertax',
+      estado: 'São Paulo, SP',
     },
     {
       cor: '#FF9F1C',
-      resumo: `Na PFX tive a oportunidade de trabalhar em um sistema de automação de processos. A
-ideia era permitir desenhar, modelar e automatizar graficamente os fluxos de processo dos
-clientes. Utilizamos Angular e bootstrap e uma metodologia DDD.`,
+      resumo: `Esse foi um projeto bem interessante! Trabalhei no desenvolvimento de um sistema que permite automatizar graficamente os processos dos clientes. Foi um desafio aplicar conceitos de DDD e criar soluções visuais eficientes com Angular.`,
       dataInicio: '01-10-2020',
       dataFim: '09-22-2020',
       cargo: 'Desenvolvedor Front-End',
       logo: 'assets/logos/pfx.png',
       empresa: 'Portal Flex LTDA',
+      estado: 'Florianópolis, SC',
     },
     {
       cor: '#2EC4B6',
-      resumo: `No Hospital eu entrei como estagiário de TI, foi minha primeira experiência profissional.
-Iniciei um aprendizado em desenvolvimento de software, e comecei a dar conta de
-pequenas demandas que os ERPs do hospital não supriam. Isso utilizando JAVA, PHP e
-Angular.
-Tive a experiência de criar relatórios, dashboards, realizar transformações de dados
-utilizando várias ferramentas, e principalmente de ser agente transformador de um setor de
-TI onde não existia bem uma área para desenvolvimento de software. Tivemos papel muito
-importante durante a pandemia da COVID construindo um painel de ocupação de leitos,
-onde a gerência conseguiu acompanhar em tempo real o status de cada leito.`,
+      resumo: `Minha primeira experiência profissional! Entrei como estagiário e, aos poucos, fui ganhando confiança e desenvolvendo soluções que os sistemas do hospital não ofereciam. Um dos momentos mais marcantes foi criar, junto com o time, um painel de ocupação de leitos que foi fundamental durante a pandemia. Foi ali que descobri meu gosto por resolver problemas com tecnologia.`,
       dataInicio: '09-10-2017',
       dataFim: '08-22-2020',
       cargo: 'Desenvolvedor Fullstack',
-      logo: 'assets/logos/hc.jpeg',
+      logo: 'assets/logos/hc.png',
       empresa: 'Hospital do Cidade',
+      estado: 'Maceió, AL',
+
     }
   ];
 }
