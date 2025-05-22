@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { RouterLink } from '@angular/router';
-import { Menu } from 'primeng/menu';
-import { MenuItem } from 'primeng/api';
+import {Component} from '@angular/core';
+import {ButtonModule} from 'primeng/button';
+import {RouterLink} from '@angular/router';
+import {Menu} from 'primeng/menu';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-header',
@@ -17,23 +17,23 @@ export class HeaderComponent {
   items: MenuItem[] = [
     {
       label: 'Sobre',
-      url: `sobre`,
+      routerLink: `sobre`,
     },
     {
       label: 'Experiência',
-      url: `experiencia`,
+      routerLink: `experiencia`,
     },
     {
       label: 'Tecnologias',
-      url: `tecnologias`,
+      routerLink: `tecnologias`,
     },
     {
       label: 'Projetos',
-      url: `projetos`,
+      routerLink: `projetos`,
     },
     {
       label: 'Hobbies',
-      url: `hobbies`,
+      routerLink: `hobbies`,
     },
   ];
 }
