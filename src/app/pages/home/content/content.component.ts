@@ -9,5 +9,4 @@ import {RouterOutlet} from '@angular/router';
   styleUrl: './content.component.scss',
 })
 export class ContentComponent {
-  events: any[] | undefined;
 }
