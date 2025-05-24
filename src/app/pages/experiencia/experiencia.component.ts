@@ -16,7 +16,7 @@ export class ExperienciaComponent {
   items = [
     {
       cor: '#FF6B6B',
-      resumo: `Aqui atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular e participo ativamente das migrações para versões mais atuais. Me envolvo nas decisões técnicas, no apoio a PMs e POs, além da navegação e usabilidade. É um ambiente que exige atenção aos detalhes, na performance e qualidade. Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.`,
+      resumo: `Na cooper, atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular. Um dos grandes desafios enfrentado foi migrar aplicações AngularJs para versões mais recentes. Constantemente sou envolvido nas decisões técnicas, no apoio a PMs e POs, além de decisões sobre navegação e usabilidade. É um ambiente que exige bastante atenção aos detalhes, principalmente nas integrações com as apis, na performance e qualidade. Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.`,
       dataInicio: '03-10-2022',
       dataFim: '',
       cargo: 'Analista e Desenvolvedor III',
@@ -26,7 +26,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#6BCB77',
-      resumo: `Tenho muito orgulho desse projeto! Desenvolvo sozinho o front-end de um sistema de gestão de NFEs usado por redes de farmácia. O sistema segue evoluindo e ajudando várias empresas, o que me motiva bastante. É um espaço onde consigo aplicar minhas ideias com bastante liberdade e responsabilidade.`,
+      resumo: `Na EGTEC desenvolvi sozinho o front-end de um sistema de gestão de NFEs usado por redes de farmácia. Tenho bastante orgulho deste projeto! Foi uma das poucas vezes fui do zero ao deploy de um projeto desse tamanho em produção. Na maioria das vezes já peguei o bonde andando nos mais variados projetos em que já trabalhei. O sistema segue evoluindo e ajudando várias empresas em sua gestão de notas, na análise de compras e outras várias áreas. A EGTEC me deu espaço onde consegui aplicar minhas ideias com bastante liberdade e responsabilidade.`,
       dataInicio: '03-10-2021',
       dataFim: '',
       cargo: 'Desenvolvedor Front-End SR',
@@ -36,7 +36,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#4D96FF',
-      resumo: `Foi uma experiência muito bacana trabalhando no time que modernizou o sistema de gestão de campanhas do Grupo Boticário. Além de desenvolver com React.js, também ajudei na manutenção do sistema legado em AngularJS, garantindo que a transição fosse tranquila e segura.`,
+      resumo: `Foi uma experiência bem legal trabalhando no time que modernizou o sistema de gestão de campanhas do Grupo Boticário. Além de desenvolver com React.js, também ajudei na manutenção do sistema legado em AngularJS, sendo ponte nessa transição entre os sistemas.`,
       dataInicio: '06-10-2021',
       dataFim: '02-22-2022',
       cargo: 'Analista de Sistemas SR',
@@ -47,7 +47,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#FFD93D',
-      resumo: `Participei de melhorias em um sistema de delivery, além de evoluir um e-commerce. Foi uma passagem rápida, mas onde pude contribuir com soluções práticas, trabalhando com Angular e Bootstrap.`,
+      resumo: `Participei de melhorias em um sistema de delivery, além de evoluir um e-commerce. Foi uma passagem rápida, mas onde pude contribuir com soluções práticas e agregando valor ao negócio com as novas features. Aqui teve um desafio interessante que foi trabalhar com o conceito de filas no front-end. Já que o sistema é multiplataforma (mobile e web) e precisava dos dados em tempo real.`,
       dataInicio: '02-25-2021',
       dataFim: '05-22-2021',
       cargo: 'Desenvolvedor Front-End',
@@ -57,7 +57,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#9D4EDD',
-      resumo: `Aqui ajudei a evoluir um sistema voltado para a área contábil. Tive a oportunidade de propor melhorias e entregar novas funcionalidades, sempre com foco na qualidade e na experiência do usuário.`,
+      resumo: `Ajudei a evoluir um sistema voltado para a área contábil. Tive a oportunidade de propor melhorias e entregar novas funcionalidades, sempre com foco na qualidade e na experiência do usuário.`,
       dataInicio: '10-15-2020',
       dataFim: '02-22-2021',
       cargo: 'Desenvolvedor Front-End',
@@ -67,7 +67,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#FF9F1C',
-      resumo: `Esse foi um projeto bem interessante! Trabalhei no desenvolvimento de um sistema que permite automatizar graficamente os processos dos clientes. Foi um desafio aplicar conceitos de DDD e criar soluções visuais eficientes com Angular.`,
+      resumo: `Esse foi um projeto bem interessante! Trabalhei no desenvolvimento de um sistema que permite automatizar graficamente os processos dos clientes. Foi um desafio criar e manter soluções visuais eficientes com Angular e BMPN.`,
       dataInicio: '01-10-2020',
       dataFim: '09-22-2020',
       cargo: 'Desenvolvedor Front-End',

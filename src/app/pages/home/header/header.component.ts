@@ -17,23 +17,23 @@ export class HeaderComponent {
   items: MenuItem[] = [
     {
       label: 'Sobre',
-      routerLink: `sobre`,
+      url: `sobre`,
     },
     {
       label: 'Experiência',
-      routerLink: `experiencia`,
+      url: `experiencia`,
     },
     {
       label: 'Tecnologias',
-      routerLink: `tecnologias`,
+      url: `tecnologias`,
     },
     {
       label: 'Projetos',
-      routerLink: `projetos`,
+      url: `projetos`,
     },
     {
       label: 'Hobbies',
-      routerLink: `hobbies`,
+      url: `hobbies`,
     },
   ];
 }
