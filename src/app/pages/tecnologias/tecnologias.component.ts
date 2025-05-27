@@ -2,10 +2,11 @@ import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Rating} from 'primeng/rating';
 import {FormsModule} from '@angular/forms';
+import {PageComponent} from '../../components/page/page.component';
 
 @Component({
   selector: 'app-tecnologias',
-  imports: [CommonModule, Rating, FormsModule],
+  imports: [CommonModule, Rating, FormsModule, PageComponent],
   templateUrl: './tecnologias.component.html',
   styleUrl: './tecnologias.component.scss',
 })
@@ -93,4 +94,11 @@ export class TecnologiasComponent {
       ]
     }
   ]
+  urlBackground = 'assets/images/tecnologias.png';
+  resumo = `Antes de qualquer coisa, é preciso ressaltar que, como desenvolvedor, crio soluções, entrego valor
+      por onde passo e aprendo à medida que me é exigido. Sou mais habilidoso com Front-End, mas também possuo
+      conhecimento em Back-End, bancos de dados e um pouco de DevOps. O mundo da tecnologia é um oceano, não é possível
+      ter domínio absoluto de todas as tecnologias, até porque, todo dia surge uma nova. O primordial é ter vontade de
+      aprender e
+      solucionar problemas reais.`;
 }
