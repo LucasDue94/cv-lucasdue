@@ -1,1 +1,28 @@
-<p>tecnologias works!</p>
+<div class="container">
+  <section class="experiencia-bg mb-4"></section>
+  <section class="container-experiencia mb-4">
+    <h2 class="titulo text-center mb-2">Tecnologias</h2>
+    <div class="mb-5">Antes de qualquer coisa, é preciso ressaltar que, como desenvolvedor, crio soluções, entrego valor
+      por onde passo e aprendo à medida que me é exigido. Sou mais habilidoso com Front-End, mas também possuo
+      conhecimento em Back-End, bancos de dados e um pouco de DevOps. O mundo da tecnologia é um oceano, não é possível
+      ter domínio absoluto de todas as tecnologias, até porque, todo dia surge uma nova. O primordial é ter vontade de
+      aprender e
+      solucionar problemas reais.
+    </div>
+
+    <div class="grid">
+      <div *ngFor="let category of techCategories" class="col-12 md:col-4">
+        <h3 class="mb-2">{{ category.title }}</h3>
+        <div *ngFor="let tech of category.items" class="flex items-center space-x-2">
+          <span>{{ tech.name }}</span>
+          <p-rating
+            [ngModel]="tech.rating"
+            [readonly]="true"
+            class="custom-rating ml-3">
+          </p-rating>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>

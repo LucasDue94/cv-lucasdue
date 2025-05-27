@@ -43,6 +43,16 @@
     justify-content: space-between;
     align-items: center;
 
+    .link-disable {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
+
+      &:hover {
+        color: $cor-verde-floresta !important;
+      }
+    }
+
     .link {
       cursor: pointer;
       margin-left: 16px;
@@ -55,6 +65,17 @@
         color: $cor-algodao;
         transition: 300ms;
       }
+    }
+
+    .badge {
+      position: absolute;
+      top: -19px;
+      right: -25px;
+      border-radius: 8px;
+      padding: 4px;
+      font-size: 10px;
+      color: $cor-verde-floresta;
+      background-color: $cor-algodao;
     }
   }
 }
