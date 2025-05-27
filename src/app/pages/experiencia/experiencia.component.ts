@@ -5,10 +5,11 @@ import {CommonModule} from '@angular/common';
 import {PrimeTemplate} from 'primeng/api';
 import {PeriodoPipe} from '../../pipes/periodo.pipe';
 import {DuracaoPipe} from '../../pipes/duracao.pipe';
+import {PageComponent} from '../../components/page/page.component';
 
 @Component({
   selector: 'app-experiencia',
-  imports: [Timeline, Card, Timeline, CommonModule, PrimeTemplate, PeriodoPipe, DuracaoPipe],
+  imports: [Timeline, Card, Timeline, CommonModule, PrimeTemplate, PeriodoPipe, DuracaoPipe, PageComponent],
   templateUrl: './experiencia.component.html',
   styleUrl: './experiencia.component.scss',
 })
@@ -87,4 +88,11 @@ export class ExperienciaComponent {
 
     }
   ];
+  resumo = `Em todas as minhas experiências, sempre estive envolvido com metodologias ágeis,
+      Gitflow,
+      integração
+      e entrega contínua. Gosto de trabalhar em equipe, contribuir com boas práticas e me desafiar tecnicamente,
+      buscando evoluir a
+      cada projeto. Aprender algo novo é sempre bem vindo.`
+  urlBackground = `assets/images/experiencia.png`
 }

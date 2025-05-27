@@ -1,0 +1,10 @@
+<section class="container">
+  <section
+    [style.backgroundImage]="backgroundImage"
+    class="img-page mb-4"></section>
+  <section class="resumo-page mb-4">
+    <h2 class="titulo mb-2">{{ titulo }}</h2>
+    <div class="mb-5">{{ resumo }}</div>
+  </section>
+  <ng-content></ng-content>
+</section>

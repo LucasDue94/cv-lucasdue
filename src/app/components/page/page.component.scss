@@ -1,0 +1,24 @@
+@use '../../../assets/styles/colors' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.img-page {
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.resumo-page {
+  max-width: 850px;
+  font-size: 18px;
+  color: $cor-verde-floresta;
+}
