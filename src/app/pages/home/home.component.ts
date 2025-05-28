@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Meta, Title} from '@angular/platform-browser';
+import {Meta} from '@angular/platform-browser';
 import {HeaderComponent} from '../../components/header/header.component';
 import {FooterComponent} from '../../components/footer/footer.component';
 import {ContentComponent} from '../../components/content/content.component';
@@ -13,23 +13,20 @@ import {ContentComponent} from '../../components/content/content.component';
 })
 export class HomeComponent {
   constructor(
-    private title: Title,
     private meta: Meta,
   ) {
-    this.title.setTitle('Currículo de Lucas Due');
     this.meta.addTags([
       {
         name: 'description',
         content:
-          'Desenvolvedor Front-End com experiência em Angular e foco em performance e design limpo.',
+          'Desenvolvedor Front-End com experiência em Angular , node.js e typescript.',
       },
-      {name: 'author', content: 'Lucas Due'},
-      {property: 'og:title', content: 'Lucas Due - Desenvolvedor Front-End'},
+      {name: 'author', content: 'Lucas Dué'},
+      {property: 'og:title', content: 'Lucas Dué - Desenvolvedor Front-End'},
       {
         property: 'og:description',
-        content: 'Currículo online com experiências, habilidades e projetos de Lucas Due.',
+        content: 'Currículo online com experiências, habilidades e projetos de Lucas Dué.',
       },
-      {property: 'og:image', content: 'https://lucasdue.com.br/assets/curriculo-preview.png'},
       {property: 'og:url', content: 'https://lucasdue.com.br'},
     ]);
   }
