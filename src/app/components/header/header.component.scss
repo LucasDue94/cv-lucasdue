@@ -167,9 +167,11 @@
   }
 
   .p-button-icon {
-    font-size: 30px;
+    font-size: 25px;
+    color: $cor-algodao;
   }
 }
+
 
 @media (max-width: 600px) {
   .container {
@@ -207,7 +209,20 @@
   #email {
     top: 60px !important;
   }
+}
 
+@media (max-width: 420px) {
+  .container-info {
+    min-width: auto !important;
+
+    #nome {
+      font-size: 2.5em !important;
+    }
+
+    #cargo {
+      font-size: 1.25em !important;
+    }
+  }
 }
 
 @keyframes fadeSlideDown {

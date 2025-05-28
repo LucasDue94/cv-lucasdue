@@ -12,9 +12,9 @@
   <div class="container-links lg:flex animate-stagger animate-delay-3">
     @for (item of items; track item.label) {
       <div class="relative">
-        <span *ngIf="item.disable" class="badge">Em breve</span>
-        <a [class.link-disable]="item.disable" class="link"
-           [routerLink]="item.url">{{ item.label }}</a>
+        <span *ngIf="item.disabled" class="badge">Em breve</span>
+        <a [class.link-disable]="item.disabled" class="link"
+           [routerLink]="item.routerLink">{{ item.label }}</a>
       </div>
     }
   </div>

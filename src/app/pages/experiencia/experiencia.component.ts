@@ -17,7 +17,11 @@ export class ExperienciaComponent {
   items = [
     {
       cor: '#FF6B6B',
-      resumo: `Na cooper, atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular. Um dos grandes desafios enfrentado foi migrar aplicações AngularJs para versões mais recentes. Constantemente sou envolvido nas decisões técnicas, no apoio a PMs e POs, além de decisões sobre navegação e usabilidade. É um ambiente que exige bastante atenção aos detalhes, principalmente nas integrações com as apis, na performance e qualidade. Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.`,
+      resumo: `<p class="mb-3">Na cooper, atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular.</p>
+               <p class="mb-3">Um dos grandes desafios enfrentado foi migrar aplicações AngularJs para versões mais recentes.</p>
+               <p class="mb-3">Constantemente sou envolvido nas decisões técnicas, no apoio a PMs e POs, além de decisões sobre navegação e usabilidade. </p>
+               <p class="mb-3">É um ambiente que exige bastante atenção aos detalhes, principalmente nas integrações com as apis, na performance e qualidade.</p>
+               <p class="mb-3">Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.</p>`,
       dataInicio: '03-10-2022',
       dataFim: '',
       cargo: 'Analista e Desenvolvedor III',

@@ -19,10 +19,7 @@
           <img [alt]="event.empresa" [src]="event.logo" class="logo mr-2"/>
           <span>{{ event.empresa }} | {{ event.estado }}</span>
         </div>
-        <p class="resumo">
-          {{ event.resumo }}
-        </p>
-
+        <div [innerHTML]="event.resumo" class="resumo"></div>
       </p-card>
     </ng-template>
   </p-timeline>

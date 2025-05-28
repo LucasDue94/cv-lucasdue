@@ -1,5 +1,5 @@
 <app-page [resumo]="resumo" [urlBackground]="urlBackground" titulo="Tecnologias">
-  <div class="grid container-experiencia">
+  <div class="grid container-experiencia mb-2">
     <div *ngFor="let category of techCategories" class="col-12 md:col-4">
       <h3 class="mb-2">{{ category.title }}</h3>
       <div *ngFor="let tech of category.items" class="flex items-center space-x-2">
