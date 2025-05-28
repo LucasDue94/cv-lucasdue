@@ -23,8 +23,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
       disabled: false
     },
     {
-      label: 'Experiência',
-      routerLink: ['/experiencia'],
+      label: 'Experiências',
+      routerLink: ['/experiencias'],
       disabled: false
     },
     {

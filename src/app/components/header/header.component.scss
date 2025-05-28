@@ -105,7 +105,11 @@
   }
 
   .p-link {
-    color: $cor-verde-floresta;
+    color: rgba($cor-algodao, 0.7);
+
+    &:hover {
+      color: $cor-algodao;
+    }
   }
 
   .container-icone-links {
@@ -121,10 +125,6 @@
     #linkedin {
       top: 10px;
       right: 5px;
-
-      &:hover {
-        color: $cor-algodao;
-      }
 
       .pi {
         font-size: 20px !important;
@@ -148,7 +148,8 @@
 
   #wpp svg,
   #email svg {
-    transition: fill 0.3s ease;
+    fill: rgba($cor-algodao, 0.8);
+    transition: fill 0.2s ease;
   }
 
   #wpp svg:hover,

@@ -97,7 +97,7 @@ export class ExperienciaComponent {
       dataFim: '08-22-2020',
       cargo: 'Desenvolvedor Fullstack',
       logo: 'assets/logos/hc.png',
-      empresa: 'Hospital do Cidade',
+      empresa: 'Hospital da Cidade',
       estado: 'Maceió, AL',
 
     }
