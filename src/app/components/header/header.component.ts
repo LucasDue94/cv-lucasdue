@@ -1,6 +1,6 @@
 import {Component, inject, OnDestroy, OnInit} from '@angular/core';
 import {ButtonModule} from 'primeng/button';
-import {RouterLink} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 import {Menu} from 'primeng/menu';
 import {CommonModule} from '@angular/common';
 import {MenuItem} from 'primeng/api';
@@ -45,16 +45,26 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ];
 
   menuService = inject(MenuService);
-  currentMenu = '';
+  router = inject(Router);
+  currentMenu: MenuItem = {
+    label: 'Sobre',
+    routerLink: ['/sobre'],
+    disabled: false
+  }
 
   ngOnInit() {
     this.menuService.getMenu().subscribe(menu => {
-      this.currentMenu = menu;
+      this.currentMenu = this.findMenu(menu);
+      this.router.navigate(this.currentMenu.routerLink);
     })
   }
 
+  findMenu(menuLabel: string): MenuItem {
+    return this.items.find(item => item.label === menuLabel) ?? this.items[0];
+  }
+
   isSelected(item: MenuItem) {
-    return this.currentMenu === item.label
+    return this.currentMenu.label === item.label
   }
 
   setMenu(item: MenuItem) {
