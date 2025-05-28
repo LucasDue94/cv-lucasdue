@@ -18,7 +18,7 @@ export class ExperienciaComponent {
     {
       cor: '#FF6B6B',
       resumo: `<p>Na cooper, atuo no desenvolvimento de soluções para seguros prestamistas do Banco do Brasil. Crio e mantenho micro frontends em Angular.</p>
-               <p>Um dos grandes desafios enfrentado foi migrar aplicações AngularJs para versões mais recentes.</p>
+               <p>Um dos grandes desafios enfrentados foi migrar aplicações AngularJs para versões mais recentes.</p>
                <p>Constantemente sou envolvido nas decisões técnicas, no apoio a PMs e POs, além de decisões sobre navegação e usabilidade. </p>
                <p>É um ambiente que exige bastante atenção aos detalhes, principalmente nas integrações com as apis, na performance e qualidade.</p>
                <p >Gosto dos desafios técnicos que aparecem e de enxergar o valor da minha entrega para o Banco do Brasil.</p>`,
@@ -32,9 +32,9 @@ export class ExperienciaComponent {
     {
       cor: '#6BCB77',
       resumo: `<p>Na EGTEC desenvolvi sozinho o front-end de um sistema de gestão de NFEs usado por redes de farmácia. Tenho bastante orgulho deste projeto!</p>
-               <p>Foi uma das poucas vezes fui do zero ao deploy de um projeto desse tamanho em produção. Na maioria das vezes já peguei o bonde andando nos mais variados projetos em que já trabalhei.</p>
+               <p>Foi uma das poucas vezes que fui do zero ao deploy de um projeto desse tamanho em produção. Na maioria das vezes já peguei o bonde andando nos mais variados projetos em que já trabalhei.</p>
                <p>O sistema segue evoluindo e ajudando várias empresas em sua gestão de notas, na análise de compras e outras várias áreas.</p>
-               <p>A EGTEC me deu espaço onde consegui aplicar minhas ideias com bastante liberdade e responsabilidade.</p>`,
+               <p>A EGTEC me deu espaço onde consegui colocar minhas ideias com bastante liberdade e responsabilidade.</p>`,
       dataInicio: '03-10-2021',
       dataFim: '',
       cargo: 'Desenvolvedor Front-End SR',
@@ -44,7 +44,7 @@ export class ExperienciaComponent {
     },
     {
       cor: '#4D96FF',
-      resumo: ` <p>Foi uma experiência bem legal trabalhando no time que modernizou o sistema de gestão de campanhas do Grupo Boticário. </p>
+      resumo: ` <p>Foi uma experiência bem legal trabalhar no time que modernizou o sistema de gestão de campanhas do Grupo Boticário. </p>
                 <p>Além de desenvolver com React.js, também ajudei na manutenção do sistema legado em AngularJS, sendo ponte nessa transição entre os sistemas.</p>`,
       dataInicio: '06-10-2021',
       dataFim: '02-22-2022',
