@@ -6,6 +6,7 @@
   position: relative;
   align-items: center;
   animation: fadeSlideUp 1s ease forwards;
+  color: $cor-verde-floresta;
 }
 
 .img-page {
@@ -21,4 +22,14 @@
   max-width: 850px;
   font-size: 18px;
   color: $cor-verde-floresta;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  color: $cor-verde-floresta;
+  max-width: 850px;
+  width: 100%;
 }

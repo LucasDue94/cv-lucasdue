@@ -6,5 +6,7 @@
     <h2 class="titulo mb-2">{{ titulo }}</h2>
     <div [innerHTML]="resumo" class="mb-5"></div>
   </section>
-  <ng-content></ng-content>
+  <section class="content">
+    <ng-content></ng-content>
+  </section>
 </section>
