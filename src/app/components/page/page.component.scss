@@ -7,6 +7,12 @@
   align-items: center;
   animation: fadeSlideUp 1s ease forwards;
   color: $cor-verde-floresta;
+
+  :host::ng-deep p {
+    margin-bottom: 1rem;
+    //text-indent: 0.5rem;
+  }
+
 }
 
 .img-page {
@@ -33,3 +39,4 @@
   max-width: 850px;
   width: 100%;
 }
+

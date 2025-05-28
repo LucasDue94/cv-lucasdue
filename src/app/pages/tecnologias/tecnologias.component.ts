@@ -95,10 +95,10 @@ export class TecnologiasComponent {
     }
   ]
   urlBackground = 'assets/images/tecnologias.png';
-  resumo = `Antes de qualquer coisa, é preciso ressaltar que, como desenvolvedor, crio soluções, entrego valor
-      por onde passo e aprendo à medida que me é exigido. Sou mais habilidoso com Front-End, mas também possuo
-      conhecimento em Back-End, bancos de dados e um pouco de DevOps. O mundo da tecnologia é um oceano, não é possível
+  resumo = ` <p> Antes de qualquer coisa, é preciso ressaltar que, como desenvolvedor, crio soluções, entrego valor
+      por onde passo e aprendo à medida que me é exigido.</p> <p> Sou mais habilidoso com Front-End, mas também possuo
+      conhecimento em Back-End, bancos de dados e um pouco de DevOps.</p> <p> O mundo da tecnologia é um oceano, não é possível
       ter domínio absoluto de todas as tecnologias, até porque, todo dia surge uma nova. O primordial é ter vontade de
       aprender e
-      solucionar problemas reais.`;
+      solucionar problemas reais.</p>`;
 }
