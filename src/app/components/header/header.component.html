@@ -13,7 +13,7 @@
     @for (item of items; track item.label) {
       <div class="relative">
         <span *ngIf="item.disabled" class="badge">Em breve</span>
-        <a [class.link-disable]="item.disabled" class="link"
+        <a [class.selected]="isSelected(item)" [class.link-disable]="item.disabled" (click)="setMenu(item)" class="link"
            [routerLink]="item.routerLink">{{ item.label }}</a>
       </div>
     }
