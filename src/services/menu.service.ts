@@ -9,6 +9,10 @@ export class MenuService {
   private readonly STORAGE_KEY = 'menu';
 
   constructor() {
+    const menu = localStorage.getItem(this.STORAGE_KEY);
+    if (menu) {
+      this.setMenu(menu)
+    }
   }
 
   setMenu(menu: string): void {
