@@ -10,24 +10,24 @@
   flex-direction: column;
   color: $cor-texto-claro;
 
-  a {
+  .link-download {
+    position: absolute;
     display: inline-flex;
+    right: 3rem;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #3b7a57; // verde floresta
-    color: white;
+    color: $cor-algodao;
     text-decoration: none;
     border-radius: 0.5rem;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: 200ms;
 
     .pi {
       font-size: 1.2rem;
     }
 
     &:hover {
-      background-color: #2e5c43; // tom mais escuro no hover
+      color: rgba($cor-algodao, 0.7); // tom mais escuro no hover
     }
   }
 }
